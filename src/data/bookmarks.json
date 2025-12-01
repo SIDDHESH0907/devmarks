@@ -1,0 +1,772 @@
+[
+  {
+    "id": 1,
+    "title": "Gmail",
+    "url": "https://mail.google.com/mail/u/0/#inbox",
+    "description": "",
+    "category": "ai"
+  },
+  {
+    "id": 2,
+    "title": "Google Drive",
+    "url": "https://drive.google.com/drive/u/2/my-drive",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 3,
+    "title": "YouTube",
+    "url": "https://www.youtube.com/",
+    "description": "",
+    "category": "learning"
+  },
+  {
+    "id": 4,
+    "title": "WhatsApp",
+    "url": "https://web.whatsapp.com/",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 5,
+    "title": "ChatGPT",
+    "url": "https://chatgpt.com/",
+    "description": "",
+    "category": "ai"
+  },
+  {
+    "id": 6,
+    "title": "M365 Copilot",
+    "url": "https://m365.cloud.microsoft/chat/?fromCode=cmcv2&redirectId=17E0DDF057544F7E9252CC697F74275B&internalredirect=CCM&auth=2",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 7,
+    "title": "TC39",
+    "url": "https://tc39.es/",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 8,
+    "title": "MDN",
+    "url": "https://developer.mozilla.org/en-US/",
+    "description": "",
+    "category": "docs"
+  },
+  {
+    "id": 9,
+    "title": "GitHub - hiteshchoudhary/js-hindi-youtube: A code repo for javascript series at Chai aur code youtube channel",
+    "url": "https://github.com/hiteshchoudhary/js-hindi-youtube",
+    "description": "",
+    "category": "learning"
+  },
+  {
+    "id": 10,
+    "title": "randomuser",
+    "url": "https://randomuser.me/api/",
+    "description": "",
+    "category": "api"
+  },
+  {
+    "id": 11,
+    "title": "JavaScript Variables",
+    "url": "https://www.w3schools.com/js/js_variables.asp",
+    "description": "",
+    "category": "docs"
+  },
+  {
+    "id": 12,
+    "title": "Monkeytype",
+    "url": "https://monkeytype.com/",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 13,
+    "title": "Anime.js",
+    "url": "https://animejs.com/",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 14,
+    "title": "GraphQL",
+    "url": "https://graphql.org/",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 15,
+    "title": "big.js - npm",
+    "url": "https://www.npmjs.com/package/big.js?activeTab=readme",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 16,
+    "title": "Tailwind",
+    "url": "https://tailwindcss.com/",
+    "description": "",
+    "category": "ai"
+  },
+  {
+    "id": 17,
+    "title": "Headless UI",
+    "url": "https://headlessui.com/",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 18,
+    "title": "daisyUI",
+    "url": "https://daisyui.com/",
+    "description": "",
+    "category": "ai"
+  },
+  {
+    "id": 19,
+    "title": "shadcn/ui",
+    "url": "https://ui.shadcn.com/",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 20,
+    "title": "JavaScript Block scope vs Function scope - YouTube",
+    "url": "https://www.youtube.com/watch?v=IaTztAtoNEY",
+    "description": "",
+    "category": "learning"
+  },
+  {
+    "id": 21,
+    "title": "\ud83d\udd25 How to Get GitHub Copilot PRO for FREE as a Student in 2025! | Complete Setup - YouTube",
+    "url": "https://www.youtube.com/watch?v=LVe4JwL6C9w",
+    "description": "",
+    "category": "learning"
+  },
+  {
+    "id": 22,
+    "title": "Microsoft Copilot tips to boost productivity | Copilot tutorial Hindi | Ritika AI - YouTube",
+    "url": "https://www.youtube.com/shorts/W1cIjvoV5BU",
+    "description": "",
+    "category": "learning"
+  },
+  {
+    "id": 23,
+    "title": "GitHub - florinpop17/app-ideas: A Collection of application ideas which can be used to improve your coding skills.",
+    "url": "https://github.com/florinpop17/app-ideas",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 24,
+    "title": "Vite",
+    "url": "https://vite.dev/",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 25,
+    "title": "Flowbite",
+    "url": "https://flowbite.com/",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 26,
+    "title": "QuickRef.ME",
+    "url": "https://quickref.me/index.html",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 27,
+    "title": "LeetCode - The World's Leading Online Programming Learning Platform",
+    "url": "https://leetcode.com/",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 28,
+    "title": "Generate and print first N prime numbers - GeeksforGeeks",
+    "url": "https://www.geeksforgeeks.org/dsa/generate-and-print-first-n-prime-numbers/",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 29,
+    "title": "Three.js",
+    "url": "https://threejs.org/",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 30,
+    "title": "StackBlitz",
+    "url": "https://stackblitz.com/",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 31,
+    "title": "McStumble",
+    "url": "https://www.mcstumble.com/tools",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 32,
+    "title": "Trello",
+    "url": "https://trello.com/",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 33,
+    "title": "Tailwind Play",
+    "url": "https://play.tailwindcss.com/",
+    "description": "",
+    "category": "ai"
+  },
+  {
+    "id": 34,
+    "title": "Google AI Studio",
+    "url": "https://aistudio.google.com/app/api-keys?project=gen-lang-client-0456904855",
+    "description": "",
+    "category": "api"
+  },
+  {
+    "id": 35,
+    "title": "Kaggle Notebooks",
+    "url": "https://www.kaggle.com/code",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 36,
+    "title": "Rethinking React best practices",
+    "url": "https://frontendmastery.com/posts/rethinking-react-best-practices/",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 37,
+    "title": "GitHub Copilot \u00b7 Your AI pair programmer",
+    "url": "https://github.com/features/copilot",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 38,
+    "title": "Card Components | Dev.UI",
+    "url": "https://www.devui.in/components/card",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 39,
+    "title": "A practical guide on Docker with projects | Docker Course - YouTube",
+    "url": "https://www.youtube.com/watch?v=rr9cI4u1_88&t=580s",
+    "description": "",
+    "category": "learning"
+  },
+  {
+    "id": 40,
+    "title": "Overriding container defaults | Docker Docs",
+    "url": "https://docs.docker.com/get-started/docker-concepts/running-containers/overriding-container-defaults/",
+    "description": "",
+    "category": "docs"
+  },
+  {
+    "id": 41,
+    "title": "mongo-express - Official Image | Docker Hub",
+    "url": "https://hub.docker.com/_/mongo-express",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 42,
+    "title": "mongo - Official Image | Docker Hub",
+    "url": "https://hub.docker.com/_/mongo",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 43,
+    "title": "Docker network fix",
+    "url": "https://chatgpt.com/c/691218f3-c8e0-8322-82fe-aa8534b92d13",
+    "description": "",
+    "category": "ai"
+  },
+  {
+    "id": 44,
+    "title": "Home - Mongo Express",
+    "url": "http://localhost:8081/",
+    "description": "",
+    "category": "local"
+  },
+  {
+    "id": 45,
+    "title": "Learn JavaScript first",
+    "url": "https://chatgpt.com/c/68f3966d-e21c-8320-862c-caf4fccac122",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 46,
+    "title": "Vector DBs - Brave Search",
+    "url": "https://search.brave.com/search?q=Vector+DBs&source=desktop&summary=1&conversation=c75789e3873c8c52901c49",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 47,
+    "title": "Weaviate - Brave Search",
+    "url": "https://search.brave.com/search?q=Weaviate&source=desktop",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 48,
+    "title": "Chroma - Brave Search",
+    "url": "https://search.brave.com/search?q=Chroma&source=desktop",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 49,
+    "title": "Pinecone - Brave Search",
+    "url": "https://search.brave.com/search?q=Pinecone&source=desktop",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 50,
+    "title": "LlamaIndex - Brave Search",
+    "url": "https://search.brave.com/search?q=LlamaIndex&source=desktop",
+    "description": "",
+    "category": "ai"
+  },
+  {
+    "id": 51,
+    "title": "LangChain.js - Brave Search",
+    "url": "https://search.brave.com/search?q=LangChain.js&source=desktop",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 52,
+    "title": "Hugging Face \u2013 The AI community building the future.",
+    "url": "https://huggingface.co/",
+    "description": "",
+    "category": "ai"
+  },
+  {
+    "id": 53,
+    "title": "TensorFlow",
+    "url": "https://www.tensorflow.org/",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 54,
+    "title": "PyTorch",
+    "url": "https://pytorch.org/",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 55,
+    "title": "Google NotebookLM | AI Research Tool & Thinking Partner",
+    "url": "https://notebooklm.google/",
+    "description": "",
+    "category": "ai"
+  },
+  {
+    "id": 56,
+    "title": "jsonplaceholder.typicode.com/users/1",
+    "url": "https://jsonplaceholder.typicode.com/users/1",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 57,
+    "title": "JavaScript array reduce method - Claude",
+    "url": "https://claude.ai/chat/40377fe2-7285-42dc-99c9-87523201f7ed",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 58,
+    "title": "Pick a Color. Make it yours. - shadcn/ui",
+    "url": "https://ui.shadcn.com/themes",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 59,
+    "title": "Document",
+    "url": "http://127.0.0.1:5500/02_DOM/04_DOM_Traversal.html",
+    "description": "",
+    "category": "local"
+  },
+  {
+    "id": 60,
+    "title": "JavaScript Events",
+    "url": "https://www.w3schools.com/js/js_events.asp",
+    "description": "",
+    "category": "docs"
+  },
+  {
+    "id": 61,
+    "title": "Sustainably Scale Your Business | Founder OS Program",
+    "url": "https://www.founderos.com/founder-os",
+    "description": "",
+    "category": "ai"
+  },
+  {
+    "id": 62,
+    "title": "git-cheat-sheet-education",
+    "url": "https://education.github.com/git-cheat-sheet-education.pdf",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 63,
+    "title": "Complete Git and GitHub Tutorial for Beginners - YouTube",
+    "url": "https://www.youtube.com/watch?v=RDxQEzXN8AU&t=207s",
+    "description": "",
+    "category": "learning"
+  },
+  {
+    "id": 64,
+    "title": "Account settings",
+    "url": "https://github.com/settings/admin",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 65,
+    "title": "Git & GitHub Crash Course \u2014 Eraser",
+    "url": "https://app.eraser.io/workspace/P96VaUsW5o0FXVOTDzHY",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 66,
+    "title": "Git color.ui explanation",
+    "url": "https://chatgpt.com/c/690a3359-2490-8321-95a7-3a5f217647be",
+    "description": "",
+    "category": "ai"
+  },
+  {
+    "id": 67,
+    "title": "Getting Started | Vite",
+    "url": "https://vite.dev/guide/",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 68,
+    "title": "Installing Tailwind CSS with Vite - Tailwind CSS",
+    "url": "https://tailwindcss.com/docs/installation/using-vite",
+    "description": "",
+    "category": "docs"
+  },
+  {
+    "id": 69,
+    "title": "Google Gemini",
+    "url": "https://gemini.google.com/app/1d1a81e457e9e226",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 70,
+    "title": "Learn how to create a react application using vite, react router dom and tailwindcss - YouTube",
+    "url": "https://www.youtube.com/watch?v=peS-Y3BcfUo",
+    "description": "",
+    "category": "learning"
+  },
+  {
+    "id": 71,
+    "title": "Sigma Web Development Course - Web Development Tutorials in Hindi \ud83d\uddff - YouTube",
+    "url": "https://www.youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w",
+    "description": "",
+    "category": "learning"
+  },
+  {
+    "id": 72,
+    "title": "useMemo \u2013 React",
+    "url": "https://react.dev/reference/react/useMemo",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 73,
+    "title": "chai-aur-react/todoContextapiNotes.md at main \u00b7 hiteshchoudhary/chai-aur-react",
+    "url": "https://github.com/hiteshchoudhary/chai-aur-react/blob/main/todoContextapiNotes.md",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 74,
+    "title": "Installation v7.9.5 | React Router",
+    "url": "https://reactrouter.com/7.9.5/start/framework/installation",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 75,
+    "title": "Redux Essentials, Part 2: Redux Toolkit App Structure | Redux",
+    "url": "https://redux.js.org/tutorials/essentials/part-2-app-structure",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 76,
+    "title": "Lucide",
+    "url": "https://lucide.dev/icons/",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 77,
+    "title": "Window: localStorage property - Web APIs | MDN",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+    "description": "",
+    "category": "docs"
+  },
+  {
+    "id": 78,
+    "title": "Quick Start \u2013 React",
+    "url": "https://react.dev/learn",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 79,
+    "title": "Reactjs roadmap guide",
+    "url": "https://chatgpt.com/c/690a0fab-6a14-8322-b52c-f69c6aa2fdaf",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 80,
+    "title": "Tutorial: Learn Advanced React \u2013 A 13-hour interactive course lead by Bob Ziroll",
+    "url": "https://scrimba.com/advanced-react-c02h",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 81,
+    "title": "Frontend Mentor | Front-end coding challenges using a real-life workflow",
+    "url": "https://www.frontendmentor.io/",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 82,
+    "title": "The Modern JavaScript Tutorial",
+    "url": "https://javascript.info/",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 83,
+    "title": "JavaScript | MDN",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "description": "",
+    "category": "docs"
+  },
+  {
+    "id": 84,
+    "title": "ECMAScript\u00ae 2026 Language\u00a0Specification",
+    "url": "https://tc39.es/ecma262/#sec-memory-model",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 85,
+    "title": "React Developer Roadmap: Learn to become a React developer",
+    "url": "https://roadmap.sh/react",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 86,
+    "title": "Chai aur react | with projects - YouTube",
+    "url": "https://www.youtube.com/playlist?list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige",
+    "description": "",
+    "category": "learning"
+  },
+  {
+    "id": 87,
+    "title": "How to Install Node.js on Ubuntu | DigitalOcean",
+    "url": "https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 88,
+    "title": "Docker Node.js VS Code setup",
+    "url": "https://chatgpt.com/c/691df60e-6354-8323-b261-c3aab46b79b4",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 89,
+    "title": "Node.js \u2014 Download Node.js\u00ae",
+    "url": "https://nodejs.org/en/download/current",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 90,
+    "title": "localhost:5000",
+    "url": "http://localhost:5000/",
+    "description": "",
+    "category": "local"
+  },
+  {
+    "id": 91,
+    "title": "Siddhesh Gaonkar | Docker Home",
+    "url": "https://app.docker.com/accounts/siddheshgaonkar",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 92,
+    "title": "hub.docker.com/search?q=react&badges=official",
+    "url": "https://hub.docker.com/search?q=react&badges=official",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 93,
+    "title": "Repositories | siddheshgaonkar",
+    "url": "https://hub.docker.com/repositories/siddheshgaonkar",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 94,
+    "title": "node-redis guide (JavaScript) | Docs",
+    "url": "https://redis.io/docs/latest/develop/clients/nodejs/",
+    "description": "",
+    "category": "docs"
+  },
+  {
+    "id": 95,
+    "title": "redis - Official Image | Docker Hub",
+    "url": "https://hub.docker.com/_/redis",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 96,
+    "title": "Network drivers | Docker Docs",
+    "url": "https://docs.docker.com/engine/network/drivers/",
+    "description": "",
+    "category": "docs"
+  },
+  {
+    "id": 97,
+    "title": "Docker: From Beginner to Expert \u2014 A Comprehensive Tutorial | by Suneel Kumar | Medium",
+    "url": "https://medium.com/@techsuneel99/docker-from-beginner-to-expert-a-comprehensive-tutorial-5efec10c82ab",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 98,
+    "title": "Volumes | Docker Docs",
+    "url": "https://docs.docker.com/engine/storage/volumes/",
+    "description": "",
+    "category": "docs"
+  },
+  {
+    "id": 99,
+    "title": "Best practices | Docker Docs",
+    "url": "https://docs.docker.com/build/building/best-practices/",
+    "description": "",
+    "category": "docs"
+  },
+  {
+    "id": 100,
+    "title": "Wildfire Games",
+    "url": "https://gitea.wildfiregames.com/",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 101,
+    "title": "Wildfire Games Documentation",
+    "url": "https://docs.wildfiregames.com/",
+    "description": "",
+    "category": "docs"
+  },
+  {
+    "id": 102,
+    "title": "ecs - Brave Search",
+    "url": "https://search.brave.com/search?q=ecs&source=desktop&summary=1&conversation=fc2218eb7655fd56c7cff5",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 103,
+    "title": "Fully Managed Container Registry \u2013 Amazon Elastic Container Registry \u2013 Amazon Web Services",
+    "url": "https://aws.amazon.com/ecr/",
+    "description": "",
+    "category": "ai"
+  },
+  {
+    "id": 104,
+    "title": "Installing GitHub Desktop on Debian/Ubuntu - Stack Overflow",
+    "url": "https://stackoverflow.com/questions/73980172/installing-github-desktop-on-debian-ubuntu",
+    "description": "",
+    "category": "coding"
+  },
+  {
+    "id": 105,
+    "title": "Developing inside a Container",
+    "url": "https://code.visualstudio.com/docs/devcontainers/containers",
+    "description": "",
+    "category": "docs"
+  },
+  {
+    "id": 106,
+    "title": "vscode docker remote container - YouTube",
+    "url": "https://www.youtube.com/results?search_query=vscode+docker+remote+container",
+    "description": "",
+    "category": "learning"
+  },
+  {
+    "id": 107,
+    "title": "Docker: Accelerated Container Application Development",
+    "url": "https://www.docker.com/",
+    "description": "",
+    "category": "ai"
+  },
+  {
+    "id": 108,
+    "title": "localhost:3000",
+    "url": "http://localhost:3000/",
+    "description": "",
+    "category": "local"
+  },
+  {
+    "id": 109,
+    "title": "Bookmarks",
+    "url": "chrome://bookmarks/?id=603",
+    "description": "",
+    "category": "other"
+  },
+  {
+    "id": 110,
+    "title": "Stitch - Design with AI",
+    "url": "https://stitch.withgoogle.com/?pli=1",
+    "description": "",
+    "category": "ai"
+  }
+]

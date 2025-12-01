@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.input-shadow {
+  @apply border border-slate-200 rounded-lg px-3 py-2 bg-white;
+}
+.card-shadow {
+  @apply bg-white rounded-lg shadow-md p-4;
+}
