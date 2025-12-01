@@ -7,10 +7,17 @@ export default function Dashboard({ bookmarks, setBookmarks, onLogout }) {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [editing, setEditing] = useState(null);
 
-  const categories = useMemo(() => {
-    const set = new Set(bookmarks.map((b) => b.category || "Uncategorized"));
-    return Array.from(set);
-  }, [bookmarks]);
+  const categories = useMemo(
+    () =>
+      Array.from(
+        new Set(
+          bookmarks
+            .map((b) => (b.category ? String(b.category).trim() : "Uncategorized"))
+            .filter(Boolean)
+        )
+      ),
+    [bookmarks]
+  );
 
   function addBookmark(item) {
     const id = item.id ?? Date.now();
@@ -143,6 +150,7 @@ export default function Dashboard({ bookmarks, setBookmarks, onLogout }) {
             else addBookmark(data);
             setEditing(null);
           }}
+          categories={categories}
         />
       )}
     </div>

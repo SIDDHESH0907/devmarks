@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-export default function BookmarkForm({ initial = {}, onCancel, onSave }) {
+export default function BookmarkForm({ initial = {}, onCancel, onSave, categories = [] }) {
   const [title, setTitle] = useState(initial.title || "");
   const [url, setUrl] = useState(initial.url || "");
   const [description, setDescription] = useState(initial.description || "");
@@ -72,12 +72,20 @@ export default function BookmarkForm({ initial = {}, onCancel, onSave }) {
             <label className="block text-sm text-slate-700 mb-1">
               Category
             </label>
+
+            {/* input with datalist: allows typing + suggestions from existing categories */}
             <input
+              list="bookmark-categories"
               className="input-shadow w-full"
               placeholder="e.g., Coding, Docs, Learning"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
             />
+            <datalist id="bookmark-categories">
+              {Array.from(new Set(categories.filter(Boolean))).map((c) => (
+                <option key={c} value={c} />
+              ))}
+            </datalist>
           </div>
 
           {/* BUTTON AREA */}
