@@ -1,16 +1,67 @@
-# React + Vite
+# DevMarks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Lightweight workspace for collecting UI ideas, design snippets, and development bookmarks. Intended as a simple, searchable collection of notes, components, and links to speed up prototyping and design review.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Store and categorize UI ideas, snippets, and references
+- Quick search and tagging
+- Simple component snapshots (markup + notes)
+- Export / import as Markdown
 
-## React Compiler
+## Getting started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js (optional, if using the included demo)
+- Git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clone
+
+```bash
+git clone <repo-url> devmarks
+cd devmarks
+```
+
+Install (demo app)
+
+```bash
+npm install
+npm start
+```
+
+Usage
+
+- Add new items as individual Markdown files under the content/ directory
+- Use tags in frontmatter for filtering, e.g.:
+
+```md
+---
+title: Button variants
+tags: [components, buttons, ui]
+---
+
+Markup and notes...
+```
+
+## Project structure (suggested)
+
+- content/ — markdown items (ideas, snippets, examples)
+- app/ — demo viewer / search UI
+- scripts/ — build / export utilities
+- README.md
+
+## Contributing
+
+- Keep entries short and focused
+- Use descriptive titles and tags
+- Open issues for feature requests or improvements
+- Follow simple commit messages: feat|fix|docs: short description
+
+## License
+
+MIT — see LICENSE file.
+
+## Notes
+
+This repository is a personal playground for UI ideas. Adapt structure and tooling to your workflow.
