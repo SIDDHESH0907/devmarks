@@ -135,13 +135,17 @@ export default function Dashboard({ bookmarks, setBookmarks, onLogout }) {
           initial={editing}
           onCancel={() => setEditing(null)}
           onSave={(data) => {
-            if (typeof data.id !== "undefined" && data.id !== null)
-              updateBookmark(data);
+            if (typeof data.id !== "undefined") updateBookmark(data);
             else addBookmark(data);
             setEditing(null);
           }}
         />
       )}
+
+      <footer className="mt-10 text-center text-xs text-slate-500">
+        {/* <p>Version: {APP_VERSION}</p> */}
+        <p>Commit: {__GIT_COMMIT__}</p>
+      </footer>
     </div>
   );
 }
