@@ -7,17 +7,10 @@ export default function Dashboard({ bookmarks, setBookmarks, onLogout }) {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [editing, setEditing] = useState(null);
 
-  const categories = useMemo(
-    () =>
-      Array.from(
-        new Set(
-          bookmarks
-            .map((b) => (b.category ? String(b.category).trim() : "Uncategorized"))
-            .filter(Boolean)
-        )
-      ),
-    [bookmarks]
-  );
+  const categories = useMemo(() => {
+    const set = new Set(bookmarks.map((b) => b.category || "Uncategorized"));
+    return Array.from(set);
+  }, [bookmarks]);
 
   function addBookmark(item) {
     const id = item.id ?? Date.now();
@@ -25,12 +18,12 @@ export default function Dashboard({ bookmarks, setBookmarks, onLogout }) {
   }
   function updateBookmark(updated) {
     setBookmarks((prev) =>
-      prev.map((b) => (b.id === updated.id ? updated : b))
+      prev.map((b) => (String(b.id) === String(updated.id) ? updated : b))
     );
   }
   function removeBookmark(id) {
     if (!confirm("Delete bookmark?")) return;
-    setBookmarks((prev) => prev.filter((b) => b.id !== id));
+    setBookmarks((prev) => prev.filter((b) => String(b.id) !== String(id)));
   }
 
   function downloadJSON() {
@@ -74,23 +67,18 @@ export default function Dashboard({ bookmarks, setBookmarks, onLogout }) {
             ))}
           </select>
 
-          {/* New primary 'New Bookmark' button (keeps existing spot) */}
           <button
             className="bg-green-600 text-white px-4 py-2 rounded-lg"
             onClick={() => setEditing({})}
-            title="Add new bookmark"
           >
             New Bookmark
           </button>
-
-          {/* Download/export */}
           <button
             className="border px-3 py-2 rounded-lg"
             onClick={downloadJSON}
           >
             Download JSON
           </button>
-
           <button className="px-3 py-2 rounded-lg" onClick={onLogout}>
             Logout
           </button>
@@ -133,6 +121,7 @@ export default function Dashboard({ bookmarks, setBookmarks, onLogout }) {
         <main className="flex-1">
           <CategoryView
             bookmarks={bookmarks}
+            setBookmarks={setBookmarks} // IMPORTANT: pass setter
             query={q}
             category={selectedCategory}
             onEdit={(b) => setEditing(b)}
@@ -146,11 +135,11 @@ export default function Dashboard({ bookmarks, setBookmarks, onLogout }) {
           initial={editing}
           onCancel={() => setEditing(null)}
           onSave={(data) => {
-            if (data.id) updateBookmark(data);
+            if (typeof data.id !== "undefined" && data.id !== null)
+              updateBookmark(data);
             else addBookmark(data);
             setEditing(null);
           }}
-          categories={categories}
         />
       )}
     </div>

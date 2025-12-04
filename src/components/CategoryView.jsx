@@ -1,7 +1,26 @@
-import React from "react";
-import BookmarkCard from "./BookmarkCard";
+import {
+  DndContext,
+  closestCenter,
+  PointerSensor,
+  useSensor,
+  useSensors
+} from "@dnd-kit/core";
+import {
+  arrayMove,
+  SortableContext,
+  verticalListSortingStrategy,
+} from "@dnd-kit/sortable";
 
-export default function CategoryView({ bookmarks, query, category, onEdit, onDelete }) {
+import SortableBookmarkRow from "./SortableBookmarkRow";
+
+/**
+ Props:
+ - bookmarks: full bookmarks array
+ - setBookmarks: setter function (required)
+ - query, category, onEdit, onDelete
+*/
+export default function CategoryView({ bookmarks, setBookmarks, query, category, onEdit, onDelete }) {
+  // visible list (filtered)
   const filtered = bookmarks.filter(b => {
     if (category && (b.category || "Uncategorized") !== category) return false;
     if (!query) return true;
@@ -9,26 +28,76 @@ export default function CategoryView({ bookmarks, query, category, onEdit, onDel
     return (b.title || "").toLowerCase().includes(q) || (b.description || "").toLowerCase().includes(q);
   });
 
-  const groups = {};
-  filtered.forEach(b => {
-    const k = b.category || "Uncategorized";
-    if (!groups[k]) groups[k] = [];
-    groups[k].push(b);
-  });
+  // convert ids to strings consistently
+  const filteredIds = filtered.map(i => String(i.id));
+
+  const sensors = useSensors(
+    useSensor(PointerSensor, { activationConstraint: { distance: 5 } })
+  );
+
+  function handleDragEnd(event) {
+    const { active, over } = event;
+    if (!over || String(active.id) === String(over.id)) return;
+
+    const activeId = String(active.id);
+    const overId = String(over.id);
+
+    const oldIndex = filteredIds.indexOf(activeId);
+    const newIndex = filteredIds.indexOf(overId);
+    if (oldIndex === -1 || newIndex === -1) return;
+
+    // reorder the filtered array
+    const reorderedFiltered = arrayMove(filtered, oldIndex, newIndex);
+
+    // If no category filter -> reorder entire bookmarks array directly by indices in full list
+    if (!category) {
+      const fullIds = bookmarks.map(b => String(b.id));
+      const fromIndex = fullIds.indexOf(activeId);
+      const toIndex = fullIds.indexOf(overId);
+      if (fromIndex === -1 || toIndex === -1) return;
+      const newFull = arrayMove(bookmarks, fromIndex, toIndex);
+      setBookmarks(newFull);
+      return;
+    }
+
+    // Category filter active -> replace only the filtered items in the full list while preserving others
+    const filteredIdSet = new Set(filteredIds);
+    const iter = reorderedFiltered.slice(); // copy
+    const merged = bookmarks.map(b => {
+      if (filteredIdSet.has(String(b.id))) {
+        return iter.shift();
+      }
+      return b;
+    });
+
+    setBookmarks(merged);
+  }
 
   return (
-    <>
-      {Object.keys(groups).length === 0 && <div className="card-shadow">No bookmarks found.</div>}
-      {Object.entries(groups).map(([cat, items]) => (
-        <div key={cat} className="mb-8">
-          <h2 className="text-xl font-semibold text-slate-800 mb-4">{cat}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {items.map(item => (
-              <BookmarkCard key={item.id} item={item} onEdit={onEdit} onDelete={()=>onDelete(item.id)} />
+    <div className="mt-4">
+      <h2 className="text-xl font-semibold text-slate-800 mb-4">Bookmarks</h2>
+
+      <div className="bg-white rounded-lg shadow ">
+        <DndContext
+          sensors={sensors}
+          collisionDetection={closestCenter}
+          onDragEnd={handleDragEnd}
+        >
+          <SortableContext
+            items={filteredIds}
+            strategy={verticalListSortingStrategy}
+          >
+            {filtered.map(item => (
+              <SortableBookmarkRow
+                key={String(item.id)}
+                item={item}
+                onEdit={() => onEdit(item)}
+                onDelete={() => onDelete(item.id)}
+              />
             ))}
-          </div>
-        </div>
-      ))}
-    </>
+          </SortableContext>
+        </DndContext>
+      </div>
+    </div>
   );
 }
